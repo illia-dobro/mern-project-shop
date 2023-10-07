@@ -1,10 +1,14 @@
+import Footer from "./bundles/common/components/footer"
+import Header from "./bundles/common/components/header"
 
 function App() {
 
   return (
-    <>
-      <h1>Welcome to ProShop</h1>
-    </>
+    <div className="flex flex-col h-screen">
+      <Header/>
+      <main className="flex-grow"></main>
+      <Footer/>
+    </div>
   )
 }
 
