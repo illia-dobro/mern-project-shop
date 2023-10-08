@@ -8,7 +8,6 @@ const Header = () => {
   return (
     <nav className="bg-white shadow">
       <Container>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 justify-between items-center">
             <Link to="/" className="flex flex-shrink-0 ">
               <Logo className="block h-7 w-auto mt-1" />
@@ -22,7 +21,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
       </Container>
     </nav>
   );
