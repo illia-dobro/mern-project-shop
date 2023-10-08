@@ -8,7 +8,7 @@ import {
 
 import App from './App.tsx'
 import './index.css'
-import HomeScreen from './bundles/common/components/screens/home-screen.tsx';
+import HomeScreen from './bundles/common/screens/home-screen.tsx';
 import ProductScreen from './bundles/products/screens/product-screen.tsx';
 
 const router = createBrowserRouter([

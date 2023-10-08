@@ -6,7 +6,7 @@ import Container from '~/bundles/common/components/container';
 
 const Header = () => {
   return (
-    <nav className="bg-white shadow">
+    <nav className="bg-white shadow mb-1">
       <Container>
           <div className="flex h-16 justify-between items-center">
             <Link to="/" className="flex flex-shrink-0 ">
