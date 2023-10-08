@@ -1,5 +1,6 @@
 import Footer from "./bundles/common/components/footer"
 import Header from "./bundles/common/components/header"
+import './index.css'
 
 function App() {
 

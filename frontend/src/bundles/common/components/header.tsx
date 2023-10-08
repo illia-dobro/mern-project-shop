@@ -1,6 +1,6 @@
 import { ShoppingCartIcon, UserIcon } from '@heroicons/react/24/solid';
-import Logo from '~/assets/logo.svg?react';
 
+import Logo from '~/assets/logo.svg?react';
 import Container from '~/bundles/common/components/container';
 
 const Header = () => {
