@@ -6,8 +6,10 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext",
   },
+
   "include": ["backend/**/*.ts"],
   "exclude": ["node_modules"]
 }

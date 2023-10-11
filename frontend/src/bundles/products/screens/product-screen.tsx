@@ -1,12 +1,25 @@
+import { useEffect, useState } from 'react';
+
 import { CheckIcon } from '@heroicons/react/20/solid';
+import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
-import { products } from '../components/products';
 import Rating from '../components/rating';
+
+import { type Product as ProductType } from '~/bundles/products/types.ts';
+
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
-  const product = products.find((p) => p._id === productId);
+  const [product, setProduct] = useState<ProductType>();
+
+  useEffect(() => {
+    const fetchProduct = async (id: string | undefined) => {
+      const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
+      setProduct(data)
+    }
+    fetchProduct(productId)
+  }, [productId])
 
   return (
     <div className="pt-2">
