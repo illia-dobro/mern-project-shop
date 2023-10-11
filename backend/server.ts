@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from "cors";
 import productRouter from './routes/products-routes.js';
 import 'dotenv/config'
 import connectDB from './config/db.js';
@@ -8,7 +9,7 @@ const port = process.env.PORT;
 
 connectDB()
 const app = express();
-
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('api running');
